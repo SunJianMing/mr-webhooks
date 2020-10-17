@@ -10,6 +10,7 @@ services:
             - ./frondend/dist:/home/webhooks
     app-pm2:
         container_name: app-pm2
+        build: ./backend
         restart: always
         ports:
             - 4000:4000

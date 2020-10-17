@@ -31,7 +31,7 @@ hander.on('error',err=>{
     }
 })
 hander.on('push',event=>{
-    console.log(event)
+    console.log(event.payload.ref)
     run_cmd('sh',['deploy-dev.sh'],function(text){
         console.log(text)
     })

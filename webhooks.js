@@ -1,7 +1,7 @@
 const http = require('http')
 const webhookHander = require("github-webhook-handler")
 const hander = webhookHander({
-    path:'/webhooks',
+    path:'/web-hooks',
     secret:'mrSun'
 })
 const {spawn} = require('child_process')

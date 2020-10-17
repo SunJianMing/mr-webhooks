@@ -5,9 +5,10 @@
                 "**/*"
             ],
             "exclude": [
+                "node_modules/**",
+                "**/node_modules/**",
                 "node_modules/",
-                "**/node_modules/",
-                ".vscode/"
+                ".vscode/**"
             ],
             "deployOnSave": false
         }],
@@ -15,6 +16,7 @@
             "type": "sftp",
             "name": "webhooks",
             "dir": "/home/ubuntu/web-hooks",
+            "host":"49.234.224.232",
             "port":22,
             "user":"root",
             "password": "sy19920104"

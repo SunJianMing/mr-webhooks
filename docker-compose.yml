@@ -11,5 +11,5 @@ services:
     app-pm2:
         container_name: app-pm2
         restart: always
-        prots:
+        ports:
             - 4000:4000

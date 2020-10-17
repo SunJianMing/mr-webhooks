@@ -7,7 +7,7 @@ services:
             - 8080:80
         volumes:
             - ./nginx/conf.d:/etc/nginx/conf.d
-            - ./frondend/dist:/home/webhooks
+            - ./frontend/dist:/home/webhooks
     webhoot-pm2:
         container_name: webhoot-pm2
         build: ./backend

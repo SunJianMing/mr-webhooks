@@ -9,7 +9,7 @@ app.get('/api/list',(req,res)=>{
     res.statusCode = 200
     res.json({
         list:[{
-            name:"mm",
+            name:"sjm",
             age:23
         }]
     })

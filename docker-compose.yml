@@ -1,0 +1,15 @@
+version: '3'
+services:
+    nginx:
+        image: nginx
+        restart: always
+        ports:
+            - 8080:80
+        volumes:
+            - ./nginx/conf.d:/etc/nginx/conf.d
+            - ./frondend/dist:/home/webhooks
+    app-pm2:
+        container_name: app-pm2
+        restart: always
+        prots:
+            - 4000:4000

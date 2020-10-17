@@ -1,0 +1,23 @@
+{
+    "deploy":{
+        "packages": [{
+            "files": [
+                "**/*"
+            ],
+            "exclude": [
+                "node_modules/",
+                "**/node_modules/",
+                ".vscode/"
+            ],
+            "deployOnSave": false
+        }],
+        "targets": [{
+            "type": "sftp",
+            "name": "webhooks",
+            "dir": "/home/ubuntu/web-hooks",
+            "port":22,
+            "user":"root",
+            "password": "sy19920104"
+        }]
+    }
+}
